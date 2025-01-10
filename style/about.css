@@ -1,0 +1,48 @@
+.about{
+    width: 90%;
+    padding: 20px;
+    background-color: var(--red-color-1);
+    border-radius: 50px;
+    color: var(--text-color-1);
+}
+
+.about-r,
+.about-l{
+    flex: 1;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.about-r{
+    gap: 100px;
+}
+
+.about-r-head{
+    flex: 1;
+    justify-content: start;
+    gap: 20px;
+}
+
+.about-r-main button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--red-color-1);
+    background-color: var(--white-color-1);
+    cursor: pointer;
+    border: 2px solid var(--white-color-1);
+    transition: 0.3s ease;
+    &:hover{
+        background: none;
+        color: var(--text-color-1);
+    }
+}
+
+.about-l{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.about-l-card{
+    flex: 1;
+}

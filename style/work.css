@@ -3,7 +3,6 @@
     padding: 20px;
     background-color: var(--white-color-1);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 30px;
     border-radius: 50px ;
 }
@@ -22,8 +21,7 @@
     width: 100%;
     height: 390px;
     display: grid;
-    display: flex;
-    grid-template-columns: repeat(280px, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     overflow-x: scroll;
     gap: 50px;
 }
@@ -47,10 +45,14 @@
     font-weight: 300;
 }
 
-.works-footer button{
+.works-footer .works-link-btn{
     font-size: 20px;
     font-weight: 300;
     gap: 20px;
+    background-color: rgb(111, 111, 111);
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 .works-footer button .bx{
