@@ -16,6 +16,7 @@ header {
     font-size: 45px;
     color: var(--text-color-1);
     cursor: pointer;
+    display: none;
 }
 
 .head-elements{
