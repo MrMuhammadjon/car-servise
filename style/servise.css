@@ -1,0 +1,70 @@
+.servise-car{
+    width: 90%;
+    padding: 20px;
+    background-color: var(--black-color-1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.servise-car-cards{
+    height: 250px;
+    background-color: var(--black-color-2);
+    border-radius: 25px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:hover .servise-car-cardson-l img{
+        transform: translateX(-35px);
+    }
+}
+
+.servise-car-cards::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    right: -360px;
+    border-radius: 25px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    border-radius: 100px 0 0 100px;
+    transition: 0.5s ease;
+}
+
+.servise-car-cards:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    border-radius: 25px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    border-radius: 100px 0 0 100px;
+}
+
+.servise-car-cardson-l,
+.servise-car-cardson-r{
+    width: 50%;
+    overflow: hidden;
+    color: var(--text-color-1);
+    padding: 20px;
+    z-index: 10;
+}
+
+.servise-car-cardson-r{
+    gap: 30px;
+}
+
+.servise-car-cardson-r h1{
+    font-size: 25px;
+}
+
+.servise-car-cardson-l img{
+    transition: 0.3s ease;
+}

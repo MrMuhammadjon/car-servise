@@ -1,0 +1,39 @@
+.home-man {
+    padding: 120px 0;
+    gap: 40px;
+    z-index: 10;
+}
+
+.home-main-header{
+    width: 50%;
+}
+
+.home-main-header h1 {
+    color: var(--text-color-1);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.home-main-main{
+    gap: 20px;
+}
+
+.home-main-main button{
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--red-color-1);
+    color: var(--text-color-1);
+    gap: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s ease;
+    border: 2px solid var(--red-color-1);
+    &:hover{
+        background: none;
+        border: 2px solid var(--red-color-1);
+    }
+    &.bx{
+        color: var(--text-color-1);
+    }
+}
